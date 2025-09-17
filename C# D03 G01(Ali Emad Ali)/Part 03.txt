@@ -1,0 +1,37 @@
+5- what meant by user defined constructor and its role in initialization
+
+A constructor is a special method that runs automatically when you create an object from a class.
+A user-defined constructor is one that you explicitly write and define the values within it.
+You can define a default, parameterized or a copy constructor.
+
+Initializes object state: It sets the values of fields or properties when the object is created.
+Enforces required values: You can make sure important data is passed at the time of creation.
+
+Why Use a User-Defined Constructor?
+
+To provide a custom way to initialize your class.
+To avoid writing repetitive code for setting default values.
+===============================================================================================================
+6- compare between Array and Linked List
+
+Array:
+Structure: A collection of elements stored in contiguous memory locations
+Memory allocation: Fixed size (declared at creation)
+Types: One-dimensional, multi-dimensional
+
+- Fast at inserting at the end
+- Very fast at accessing indices
+
+- slow at inserting at the start/middle
+- slow at deleteing at the start/middle
+
+Linked List:
+Structure: A sequence of nodes, where each node points to the next one (doubly points at both directions)
+Memory allocation: Dynamic size (grows/shrinks as needed)
+Types: Singly, doubly, circular linked lists
+
+- fast at inserting at the start/middle
+- fast at deleteing at the start/middle
+
+- slow at accessing indices (Because you need to traverse every node)
+- slow at inserting at the end

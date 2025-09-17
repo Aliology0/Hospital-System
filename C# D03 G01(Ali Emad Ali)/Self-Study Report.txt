@@ -1,0 +1,58 @@
+1) SB built_in functions
+- Append()
+- Remove(int startIndex, int length)
+- Replace(string oldValue, string newValue)
+- Insert(int index, string value)
+- Length
+- ToString()
+- Clear()
+- AppendLine()
+========================================================================================================================
+2) Hashing >> Hash based dictionary
+
+Hashing is a process of converting data (a key) into a fixed-size numeric value (called a hash code).
+This value determines where to store or how to find the data efficiently.
+
+How does it work?
+1- You insert a key ("Ali").
+2- C# computes its hash code using .GetHashCode().
+3- That hash determines which "bucket" in memory it goes to.
+4- When you search for "Ali", it jumps directly to that bucket using the hash, no need to search linearly.
+
+Notes:
+Keys must be unique
+Keys must implement GetHashCode() and Equals() properly
+========================================================================================================================
+3) .rdata section
+
+.rdata stands for Read-Only Data Section,
+it’s part of the memory layout in compiled programs.
+
+- It's a section in the executable binary (like .exe or .dll)
+- Stores constant data: strings, literals, format specifiers, constant tables, etc.
+- Not meant to be modified at runtime
+
+Example:
+const string msg = "Hello World!";
+========================================================================================================================
+4) Switch evolution in C# versions, where upperhand to c# 
+
+C# 1.0 – 6.0: Basic switch
+Supports only primitive types (int, char, string, etc.)
+🔸 Simple, readable, but limited, can't switch on types or complex conditions.
+
+C# 7.0: Pattern Matching with switch
+Now you can switch on types and use type patterns
+🔸 Opened the door to pattern matching, switch became more flexible and intelligent.
+
+C# 8.0: Switch Expressions
+Replaces the traditional switch block with an expression, compact and clean.
+🔸 No break, just arrows =>
+🔸 Great for assigning values in one line
+
+C# 9.0: Relational patterns and logical patterns
+Now you can write conditions inside switch like inequalities and and/or logic.
+🔸 First time switch could use expressions like >=, and, or directly
+
+
+C# took the upperhand starting with C# 8.0 after the switch expressions update.

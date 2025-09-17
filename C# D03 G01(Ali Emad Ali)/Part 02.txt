@@ -1,0 +1,29 @@
+2- What’s Enum data type, when is it used? And name three common built_in enums used frequently?
+
+enum (enumeration) is a special value type that lets you define a set of named constants.
+It's used to make your code more readable, maintainable, and less error-prone
+by replacing "magic numbers" with meaningful names.
+
+use enums when:
+- You want to represent a fixed set of constants
+- You want to improve readability
+- You want to avoid using arbitrary numbers or strings to represent states
+
+Common uses for enums:
+- Days of the week
+- Months of the year
+- Order Status
+- Flags
+============================================================================================================================
+3- What are scenarios to use string Vs StringBuilder?
+
+Use String when:
+- Text is small and not changing much.
+- Simple concatenation in the string
+- Performance is not critical and not important
+
+
+Use StringBuilder when:
+- Multiple or repetitive string changes
+- Many modifications in a loop
+- Performance is critical and important
